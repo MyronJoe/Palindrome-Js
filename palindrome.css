@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    width: 30%;
+    margin: auto;
+    padding-top: 8em;
+
+}
+.form-input::placeholder{
+    color: navy;
+    font-size: 11px;
+}
+.form-input{
+    width: 100%;
+    padding: 13px;
+    margin: 15px 0;
+    border: 1px solid rgb(221, 221, 221);
+    outline: none;
+}
+#btnConvert{
+    background-color: navy;
+    padding: 13px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#btnConvert:hover{
+    background-color: rgb(1, 1, 73);
+}
+.topic{
+    background-color: navy;
+    text-align: center;
+    color: white;
+    padding: 13px;
+}
+.inputs{
+    padding: 13px 15px;
+    border: 1px solid rgb(221, 221, 221);
+}
+.color-red{
+    color: red;
+}
+.color-green{
+    color: green;
+}
