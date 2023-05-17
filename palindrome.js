@@ -3,31 +3,31 @@ var out1 = document.querySelector('#output1')
 var btn = document.querySelector('#btnConvert')
 var result = document.querySelector('#result')
 
-btn.addEventListener('click', function(){
+btn.addEventListener('click', function () {
 
-    if(inp1.value === ''){
+    if (inp1.value === '') {
 
         result.textContent = 'Input a word'
         result.classList.add('color-red')
     }
-    else{
+    else {
         input = inp1.value
 
-        function palindrome(str){
+        function palindrome(str) {
             return str.split('').reverse().join('')
         }
 
         out1.value = palindrome(input)
 
-        if(out1.value === inp1.value){
+        if (out1.value === inp1.value) {
             result.textContent = 'This is a palindrom'
-            result.classList.add('color-green') 
+            result.classList.add('color-green')
         }
-        else{
+        else {
             result.textContent = 'This is not a palindrom'
             result.classList.add('color-red')
         }
-        
+
     }
-  
+
 })
